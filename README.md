@@ -42,7 +42,7 @@ This will create the `jwt_blacklists` table in your database.
     In `config/jwt.php`, set the `storage` option:
 
     ```php
-    'storage' => JwtDatabaseBlacklist\Storage\DatabaseStorage::class,
+    'storage' => Kamoca\JwtDatabaseBlacklist\Providers\Storage\Illuminate::class,
     ```
 
     2.2. **Ensure blacklist is enabled**
