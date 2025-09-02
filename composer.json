@@ -1,0 +1,48 @@
+{
+    "name": "kamoca/laravel-jwt-database-blacklist",
+    "description": "JWT blacklist storage in database for tymon/jwt-auth",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "jwt",
+        "blacklist",
+        "database"
+    ],
+    "homepage": "https://github.com/KauanCalheiro/laravel-jwt-database-blacklist",
+    "support": {
+        "issues": "https://github.com/KauanCalheiro/laravel-jwt-database-blacklist/issues",
+        "source": "https://github.com/KauanCalheiro/laravel-jwt-database-blacklist"
+    },
+    "authors": [
+        {
+            "name": "Kauan Morinel Calheiro",
+            "email": "kauan.calheiro@universo.univates.br",
+            "homepage": "https://github.com/KauanCalheiro",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+        "illuminate/database": "^9.0|^10.0|^11.0|^12.0",
+        "tymon/jwt-auth": "^2.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kamoca\\JwtDatabaseBlacklist\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kamoca\\JwtDatabaseBlacklist\\Providers\\BlacklistServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
